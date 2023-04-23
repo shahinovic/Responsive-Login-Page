@@ -1,0 +1,128 @@
+.app {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.work-with-us {
+  position: relative;
+}
+.work-with-us img {
+  max-height: 100vh;
+}
+.work-with-us .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 70%;
+  height: 260px;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.work-with-us .text h1 {
+  width: 365px;
+  height: 64px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 56px; */
+  line-height: 64px;
+  color: #fff;
+}
+
+.work-with-us .text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.sign-up {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.sign-up-link {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.actions {
+  width: 85%;
+  height: 60%;
+}
+
+.actions > *:not(:first-child) {
+  margin-top: 30px;
+}
+
+.actions .or {
+  position: relative;
+}
+.actions .or::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: #00000075;
+}
+.actions .or::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: #00000075;
+}
+
+.actions .forget-password {
+  margin-left: calc(100% - 180px);
+}
+.sign-in-btn {
+  border: none;
+  background-color: #997825;
+}
+.sign-in-btn:hover {
+  background-color: #775c17;
+}
+.sign-in-btn + p {
+  font-size: 0.7em;
+}
+.twitter {
+  fill: #47acdf;
+}
+
+.border-label {
+  display: flex;
+  justify-content: space-between;
+}
+.border-label span {
+  display: grid;
+  place-items: center;
+}
+
+.border-label button {
+  border: none;
+  background: none;
+  color: #000;
+}
+
+.border-label button:hover {
+  background-color: #000;
+  color: #fff;
+}
